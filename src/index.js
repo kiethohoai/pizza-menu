@@ -47,6 +47,7 @@ const pizzaData = [
   },
 ];
 
+// App
 function App() {
   return (
     <div className="container">
@@ -57,6 +58,7 @@ function App() {
   );
 }
 
+// Header
 function Header() {
   // const style = { color: "red", fontSize: "48px", textTransform: "uppercase" };
   const style = {};
@@ -66,18 +68,44 @@ function Header() {
     </header>
   );
 }
+
+// Menu;
 function Menu() {
   return (
     <main className="menu">
       <h2>Our Menu</h2>
-      <Pizza />
-      <Pizza />
-      <Pizza />
-      <Pizza />
+      <Pizza
+        name="Pizza Pinaci"
+        ingredient="Tomato, mozarella, spinach, and ricotta cheese"
+        photoName="pizzas/spinaci.jpg"
+        price={100}
+      />
+
+      <Pizza
+        name="Pizza Funghi"
+        ingredient="Tomato, mozarella, mushrooms, and onion"
+        photoName="pizzas/funghi.jpg"
+        price={200}
+      />
     </main>
   );
 }
 
+// Pizza
+function Pizza(props) {
+  return (
+    <div className="pizza">
+      <img src={props.photoName} alt={props.name} />
+      <div>
+        <h3>{props.name}</h3>
+        <p>{props.ingredient}</p>
+        <span>{props.price}</span>
+      </div>
+    </div>
+  );
+}
+
+// Footer;
 function Footer() {
   const hour = new Date().getHours();
   const openHour = 8;
@@ -95,16 +123,6 @@ function Footer() {
     <footer className="footer">
       {new Date().toLocaleTimeString()} We're currently open!
     </footer>
-  );
-}
-
-function Pizza() {
-  return (
-    <div>
-      <img src="pizzas/spinaci.jpg" alt="Pizza spinaci" />
-      <h3>Pizza Prosciutto</h3>
-      <p>Tomato, mozarella, ham, aragula, and burrata cheese</p>
-    </div>
   );
 }
 

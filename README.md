@@ -1,6 +1,7 @@
 The Ultimate React Course 2024
 Pizza Menu Project
 
+011 Passing and Receiving Props
 010 Styling React Applications
 009 Separation of Concerns
 008 JavaScript Logic in Components
