@@ -1,6 +1,7 @@
 The Ultimate React Course 2024
 Pizza Menu Project
 
+010 Styling React Applications
 009 Separation of Concerns
 008 JavaScript Logic in Components
 007 Creating More Components
