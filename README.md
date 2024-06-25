@@ -1,6 +1,7 @@
 The Ultimate React Course 2024
 Pizza Menu Project
 
+009 Separation of Concerns
 008 JavaScript Logic in Components
 007 Creating More Components
 006 What is JSX
